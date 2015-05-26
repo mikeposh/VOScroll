@@ -39,14 +39,14 @@
     [self.view addSubview:scrollView1];
     
     // a scroll view implementing UIAccessibilityContainer protocol
-    UIScrollView *scrollView2 = [self createScrollViewOfClass:[CustomScrollView class] atOriginY:450.f];
+    UIScrollView *scrollView2 = [self createScrollViewOfClass:[CustomScrollView class] atOriginY:250.f];
     [self.view addSubview:scrollView2];
 }
 
 - (UIScrollView *)createScrollViewOfClass:(Class)scrollViewClass atOriginY:(CGFloat)originY
 {
     CGRect viewFrame = self.view.frame;
-    CGRect scrollFrame = CGRectMake(0.f, originY, viewFrame.size.width, 250.f);
+    CGRect scrollFrame = CGRectMake(0.f, originY, viewFrame.size.width, 50.f);
     UIScrollView *scrollView = [[scrollViewClass alloc] initWithFrame:scrollFrame];
     scrollView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
     [self addSubviewsToScrollView:scrollView];
@@ -58,7 +58,7 @@
     CGRect scrollViewFrame = scrollView.frame;
     CGFloat x = 0.f;
     CGFloat y = 0.f;
-    CGFloat width = 300.f;
+    CGFloat width = 250.f;
     CGFloat height = scrollViewFrame.size.height;
     int nViews = 7;
     
