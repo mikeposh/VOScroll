@@ -18,7 +18,7 @@ Summary of testing on devices with different iOS versions (mixture of iPhone, iP
 |  8.3           |  N       | Y      |  N      |  Y            |
 
 Key:
-PT=Portrait; LS=Landscape; -ACP=UIAccessibilityContainer protocol not implemented; +ACP=UIAccessibilityContainer protocol implemented; Y=Can navigate to completely hidden elements; N=Cannot navigate to completely hidden elements.
+PT=Portrait; LS=Landscape; -ACP=UIAccessibilityContainer protocol not implemented; +ACP=UIAccessibilityContainer protocol implemented; Y=Can navigate to elements which are completely off-screen; N=Cannot navigate to elements which are completely off-screen.
 
 It appears that iOS 8 added the ability to navigate to unseen elements, but in Landscape only.
 
